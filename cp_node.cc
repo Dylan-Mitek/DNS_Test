@@ -2154,7 +2154,7 @@ void homa_client::sender()
 	
 		double interval = interval_dist(rand_gen); // original interval
 		if ((rand() % 100) < 5) {  // ~5% chance to simulate a burst pause
-			interval *= 100;       // increase interval length significantly
+			interval *= 1000;       // increase interval length significantly
 		}
 	
 		next_start += interval * cycles_per_second;
