@@ -2164,8 +2164,6 @@ void homa_client::sender()
 			 * the response here. */
 			wait_response(&receiver, rpc_id);
 		}
-	wait_response(&receiver, rpc_id);
-		}
 	}
 }
 
